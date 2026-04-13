@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="pUe0fyuOCHFM6t2Nc656">
+    <mxGraphModel dx="1501" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="__ZZaZh7MtI4TXBjNo5L-1" connectable="0" parent="1" style="group;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+          <mxGeometry height="814" width="860" x="170" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="__ZZaZh7MtI4TXBjNo5L-1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#111827;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="贪吃蛇升级版系统——0层数据流图" vertex="1">
+          <mxGeometry height="40" width="560" x="120" as="geometry" />
+        </mxCell>
+        <mxCell id="user" parent="__ZZaZh7MtI4TXBjNo5L-1" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111827;fontSize=18;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="用户" vertex="1">
+          <mxGeometry height="50" width="150" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="__ZZaZh7MtI4TXBjNo5L-1" style="shape=swimlane;html=1;rounded=1;startSize=45;horizontal=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;fontSize=18;rotation=90;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="1&#xa;登录/注册处理" vertex="1">
+          <mxGeometry height="130" width="150" x="415" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="__ZZaZh7MtI4TXBjNo5L-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=0;fillColor=#FFFFFF;strokeColor=#111827;fontSize=17;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="D1&#xa;用户表" vertex="1">
+          <mxGeometry height="44" width="170" x="405" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="__ZZaZh7MtI4TXBjNo5L-1" style="shape=swimlane;html=1;rounded=1;startSize=40;horizontal=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;fontSize=18;rotation=90;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="2&#xa;游戏运行" vertex="1">
+          <mxGeometry height="100" width="150" x="415" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="__ZZaZh7MtI4TXBjNo5L-1" style="shape=swimlane;html=1;rounded=1;startSize=40;horizontal=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;fontSize=18;rotation=90;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="3&#xa;日志处理" vertex="1">
+          <mxGeometry height="100" width="150" x="415" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="__ZZaZh7MtI4TXBjNo5L-1" style="shape=partialRectangle;html=1;whiteSpace=wrap;top=0;fillColor=#FFFFFF;strokeColor=#111827;fontSize=17;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="D2&#xa;日志表" vertex="1">
+          <mxGeometry height="44" width="170" x="405" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="p1" value="登录信息 / 注册信息">
+          <mxGeometry relative="1" x="-0.0007" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="115" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="user" value="登录结果 / 注册结果">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="150" />
+              <mxPoint x="240" y="360" />
+            </Array>
+            <mxPoint x="420" y="150" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="d1" value="用户信息">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="p1" value="用户信息">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="p2" value="当前用户信息">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="p2" value="开始游戏 / 控制指令 / 结束游戏">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="user" value="游戏状态 / 本局结果">
+          <mxGeometry relative="1" x="-0.002" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="p3" value="对局记录">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;entryX=0.556;entryY=0.969;entryDx=0;entryDy=0;entryPerimeter=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="p3" value="日志查询请求">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="75" y="650" />
+              <mxPoint x="240" y="650" />
+              <mxPoint x="240" y="648" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="p3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="d2" value="日志信息">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="p3" value="日志信息">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="__ZZaZh7MtI4TXBjNo5L-1" source="p3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#111827;fontSize=14;endArrow=block;endFill=1;exitX=0.689;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" target="user" value="日志信息 / 排行结果">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="670" />
+              <mxPoint x="240" y="670" />
+              <mxPoint x="240" y="370" />
+              <mxPoint x="75" y="370" />
+            </Array>
+            <mxPoint x="430" y="670" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
